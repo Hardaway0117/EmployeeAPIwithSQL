@@ -26,7 +26,8 @@
 - Visual Studio 2022  
 - .NET 8.0  
 - C#  
-- SQLite  
-## text
+- SQLite
+
+## how to test
 
 Run with brwoser > swagger UI (CRUD)
