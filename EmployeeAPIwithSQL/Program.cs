@@ -1,4 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using EmployeeAPIwithSQL.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// active sqlnetwork (with appsettings.json > DefaultConnection)
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Add services to the container.
 
